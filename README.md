@@ -25,34 +25,34 @@ Dependências:
 
 <br />
 
-### Subindo o primeiro servidor Express-JS com Typescript:
-![Subindo o primeiro servidor com typescript](/public/images/subindo-primeiro-servidor-typescript.png)
+### Subindo o primeiro 
+![Subindo o primeiro servidor com typescript](/public/images/)
 
 
 
 <br />
 
-### Apresentando a rota GET /users/:uuid
-![Apresentando a rota get users id](/public/images/rota-get-users-id.png)
+### Apresentando a 
+![Apresentando a rota get users id](/public/images/)
 
 
 
 <br />
 
-### Apresentando a rota POST /users
-![Apresentando a rota post users](/public/images/rota-post-users.png)
+### Apresentando a 
+![Apresentando a rota post users](/public/images/)
 
 
 <br />
 
-### Apresentando a rota PUT /users/:uuid
-![Apresentando a rota put users id](/public/images/rota-put-users-id.png)
+### Apresentando a rota 
+![Apresentando a rota put users id](/public/images/)
 
 
 <br />
 
-### Apresentando a rota DELETE /users/:uuid
-![Apresentando a rota delete users id](/public/images/rota-delete-users-id.png)
+### Apresentando a rota 
+![Apresentando a rota delete users id](/public/images/)
 
 
 
