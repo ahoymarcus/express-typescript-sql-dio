@@ -1,6 +1,8 @@
 import { Request, Response, NextFunction, Router } from 'express';
 import { StatusCodes } from 'http-status-codes';
 
+import userRepository from '../repositories/user.repository';
+
 
 // get 		/users
 // get 		/users/:uuid
@@ -12,8 +14,11 @@ import { StatusCodes } from 'http-status-codes';
 
 const usersRoute = Router();
 
-usersRoute.get('/users', (req: Request, res: Response, next: NextFunction) => {
-	const users = [{ userName: 'Renan' }];
+usersRoute.get('/users', async (req: Request, res: Response, next: NextFunction) => {
+	// Mock object
+	// const users = [{ userName: 'Renan' }];
+	
+	const users = await userRepository.findAllUsers();
 	
 	res.status(StatusCodes.OK).send({ users });
 });
