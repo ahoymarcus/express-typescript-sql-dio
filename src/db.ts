@@ -1,9 +1,12 @@
+//import dotenv from 'dotenv';
+
 import { Pool } from 'pg';
 
-import dotenv from 'dotenv';
 
 
-const connectionString = process.env.DATABASE_URL;
+//const connectionString = '';
+const connectionString = process.env.POSTGRES_URL;
+
 
 // Trabalhar com um Pool de conexões
 const db = new Pool({ connectionString });

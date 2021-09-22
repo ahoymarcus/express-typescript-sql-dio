@@ -1,3 +1,6 @@
+import dotenv from 'dotenv';
+//require('dotenv').config();
+
 import express, { Request, Response, NextFunction} from 'express';
 
 import statusRoute from './routes/status.route';

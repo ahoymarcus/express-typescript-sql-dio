@@ -20,7 +20,7 @@ usersRoute.get('/users', async (req: Request, res: Response, next: NextFunction)
 	
 	const users = await userRepository.findAllUsers();
 	
-	res.status(StatusCodes.OK).send({ users });
+	res.status(StatusCodes.OK).send(users);
 });
 
 usersRoute.get('/users/:uuid', (req: Request<{ uuid: string }>, res: Response, next: NextFunction) => {
