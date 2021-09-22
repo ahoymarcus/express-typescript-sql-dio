@@ -16,6 +16,7 @@ Trata-se da criação de um microserviço de autenticação para usuários e da 
 
 Dependências:
 
+- Dotenv
 - Typescript
 - @types/node
 - Express-JS
