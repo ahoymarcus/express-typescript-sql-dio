@@ -32,22 +32,22 @@ Dependências:
 
 <br />
 
-### Subindo o primeiro 
-![Subindo o primeiro servidor com typescript](/public/images/)
+### Apresentando a primeira rota: GET /users 
+![Resultado da chamada da 1ª rota em get users](/public/images/rota-get-users.png)
 
 
 
 <br />
 
-### Apresentando a 
-![Apresentando a rota get users id](/public/images/)
+### Apresentando a segunda rota: GET /users/:uuid
+![Resultado da chamada da 2ª rota em get users-id](/public/images/)
 
 
 
 <br />
 
-### Apresentando a 
-![Apresentando a rota post users](/public/images/)
+### Apresentando a terceira rota: POST /users
+![Resultado da chamada da 3ª rota em post users](/public/images/)
 
 
 <br />

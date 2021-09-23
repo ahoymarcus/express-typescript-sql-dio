@@ -46,11 +46,37 @@ class UserRepository {
 		
 		return user;
 	}
+	
+	
+	// Não esquecer de passar o param de criptografia do Postgres
+	// Aqui a chave está sendo passada, mas o certo é tê-la 
+	// como variável de ambiente e passada $3
+	async create(user: User): Promise<string> {
+		const script = `
+			INSERT INTO application_user (username, password)
+				VALUES ($1, crypt($2, 'my_salt'))
+			RETURNING uuid
+		`;
+		
+		const values = [user.username, user.password];
+	
+		const { rows } = await db.query<{ uuid: string }>(script, values);
+		
+		const [newUser] = rows;
+		
+		return newUser.uuid;
+	}
+	
+	
+	
 }
 
 
 
 export default new UserRepository();
+
+
+
 
 
 
