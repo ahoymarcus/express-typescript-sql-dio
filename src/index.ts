@@ -2,6 +2,7 @@ import dotenv from 'dotenv';
 //require('dotenv').config();
 
 import express, { Request, Response, NextFunction} from 'express';
+import errorHandler from './middlewares/error-handler.middleware';
 
 import statusRoute from './routes/status.route';
 import userRoute from './routes/user.route';
@@ -22,6 +23,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use(statusRoute);
 app.use(userRoute);
 
+
+
+
+// Configurar os Errors Handlers (middleware)
+app.use(errorHandler);
 
 
 

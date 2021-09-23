@@ -73,6 +73,13 @@ Dependências:
 
 
 
+<br />
+
+### Testando um tratamento de erro customizado na rota GET /users/:uuid
+![Testando um tratamento de erro customizado](/public/images/testando-tratamento-de-erro-customizado.png)
+
+
+
 
 <br />
 
