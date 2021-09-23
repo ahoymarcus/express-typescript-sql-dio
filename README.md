@@ -40,14 +40,14 @@ Dependências:
 <br />
 
 ### Apresentando a segunda rota: GET /users/:uuid
-![Resultado da chamada da 2ª rota em get users-id](/public/images/)
+![Resultado da chamada da 2ª rota em get users-id](/public/images/rota-get-users-id.png)
 
 
 
 <br />
 
 ### Apresentando a terceira rota: POST /users
-![Resultado da chamada da 3ª rota em post users](/public/images/)
+![Resultado da chamada da 3ª rota em post users](/public/images/rota-post-users.png)
 
 
 <br />
