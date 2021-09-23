@@ -1,12 +1,14 @@
 
 class DatabaseError extends Error {
-	
-	constructor(
-		message: string,
-		error: Error
-	) {
-		super(message);
-	}
+
+    constructor(
+        public message: string,
+        public error?: any,
+    ) {
+        super(message);
+    }
+
 }
 
+export default DatabaseError;
 

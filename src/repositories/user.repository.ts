@@ -2,6 +2,7 @@
 import db from '../db';
 import User from '../models/user.model';
 
+import DatabaseError from '../models/errors/database.error.model';
 
 
 
@@ -50,7 +51,7 @@ class UserRepository {
 		} catch (error) {
 			console.log(error);
 			
-			throw error;
+			throw new DatabaseError('Erro na consulta por ID', error);
 		}
 		
 	}

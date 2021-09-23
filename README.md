@@ -68,8 +68,8 @@ Dependências:
 
 <br />
 
-### Inserindo tratamento de erro nas rotas:
-![](/public/images/)
+### Testando tratamento de erro genérico em uma das rotas:
+![Testando um tratamento de erro genérico](/public/images/inserindo-tratamento-de-erro-genérico.png)
 
 
 
