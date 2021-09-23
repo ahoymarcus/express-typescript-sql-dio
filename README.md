@@ -54,8 +54,9 @@ Dependências:
 
 <br />
 
-### Apresentando a rota 
-![Apresentando a rota put users id](/public/images/)
+### Apresentando a quarta rota: PUT /users/:uuid 
+![Resultado da chamada da 4ª rota em put users-id](/public/images/rota-put-users-id.png)
+
 
 
 <br />
