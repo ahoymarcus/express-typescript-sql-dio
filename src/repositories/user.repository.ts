@@ -31,20 +31,28 @@ class UserRepository {
 	// para a query string para evitar SQL 
 	// Injection
 	async findById(uuid: string): Promise<User> {
-		const query = `
-			SELECT uuid, username
-				FROM application_user
-				WHERE uuid = $1
-		`;
 		
-		const values = [uuid];
+		try {
+			const query = `
+				SELECT uuid, username
+					FROM application_user
+					WHERE uuid = $1
+			`;
+			
+			const values = [uuid];
+			
+			const { rows } = await db.query<User>(query, values);
+			
+			const [ user ] = rows;
+			// const user = rows[0];
+			
+			return user;
+		} catch (error) {
+			console.log(error);
+			
+			throw error;
+		}
 		
-		const { rows } = await db.query<User>(query, values);
-		
-		const [ user ] = rows;
-		// const user = rows[0];
-		
-		return user;
 	}
 	
 	

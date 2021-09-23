@@ -66,6 +66,10 @@ Dependências:
 
 
 
+<br />
+
+### Inserindo tratamento de erro nas rotas:
+![](/public/images/)
 
 
 
