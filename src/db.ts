@@ -5,7 +5,9 @@ import { Pool } from 'pg';
 
 
 //const connectionString = '';
-const connectionString = process.env.POSTGRES_URL;
+//const connectionString = process.env.POSTGRES_URL;
+
+
 
 
 // Trabalhar com um Pool de conexões
