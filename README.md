@@ -61,8 +61,12 @@ Dependências:
 
 <br />
 
-### Apresentando a rota 
-![Apresentando a rota delete users id](/public/images/)
+### Apresentando a quinta rota: DELETE /users/:uuid 
+![Resultado da chamada da 5ª rota em delete users-id](/public/images/rota-delete-users-id.png)
+
+
+
+
 
 
 

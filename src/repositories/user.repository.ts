@@ -82,6 +82,18 @@ class UserRepository {
 		await db.query(script, values);	
 	}
 	
+	// Cuidado: delete é uma palavra reservada do Javascript
+	async remove(uuid: string): Promise<void> {
+		const script = `
+			DELETE
+				FROM application_user
+				WHERE uuid = $1
+		`;
+		
+		const values = [uuid];
+		
+		await db.query(script, values);
+	}
 	
 }
 
